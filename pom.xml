@@ -32,9 +32,9 @@
 	</distributionManagement>
 
 	<scm>
-		<connection>scm:git:git@github.com:krishnamurthypradeep/devops-infrastructure.git</connection>
-		<developerConnection>scm:git:git@github.com:krishnamurthypradeep/devops-infrastructure.git</developerConnection>
-		<url>git@github.com:krishnamurthypradeep/devops-infrastructure.git</url>
+		<connection>scm:git:git@github.com:shruthiklk15/product-app.git</connection>
+		<developerConnection>scm:git:git@github.com:shruthiklk15/product-app.git</developerConnection>
+		<url>git@github.com:shruthiklk15/product-app.git</url>
 		<tag>v0.0.1</tag>
 	</scm>
 
