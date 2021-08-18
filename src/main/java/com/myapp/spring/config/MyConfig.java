@@ -29,5 +29,4 @@ public class MyConfig {
 		return dataSource;
 
 	}
-
 }
