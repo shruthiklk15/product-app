@@ -9,17 +9,14 @@
 		<version>2.5.3</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>product-app</groupId>
+	<groupId>com.example</groupId>
 	<artifactId>product-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>product-app</name>
 	<packaging>war</packaging>
+	<name>product-app</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
-		<thucydides.version>1.8.4</thucydides.version>
-		<jetty.port>9090</jetty.port>
-		<jetty.stop.port>9999</jetty.stop.port>
 	</properties>
 
 	<distributionManagement>
@@ -41,13 +38,7 @@
 		<url>git@github.com:shruthiklk15/product-app.git</url>
 		<tag>v0.0.1</tag>
 	</scm>
-
-
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -59,6 +50,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework.boot</groupId>
@@ -67,14 +59,11 @@
 			</exclusions>
 		</dependency>
 
-		 <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-jetty</artifactId> 
-			<scope>provided</scope> </dependency> 
-
-<!-- 	<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<scope>provided</scope>
-		</dependency> -->	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jetty</artifactId>
+			<!-- <scope>provided</scope> -->
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -87,6 +76,8 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-tomcat</artifactId> 
+			<scope>provided</scope> </dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -100,6 +91,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
@@ -155,8 +147,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			
-						
 		</plugins>
 	</build>
 
