@@ -48,13 +48,13 @@ bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean verify/)
 
 stage('Deploy') {
 
-sh 'curl -u admin:admin -T target/**.war "http://localhost:7080/manager/text/deploy?path=/ibmdevops&update=true"&#39;
+bat 'curl -u jenkins:jenkins -T target/**.war "http://localhost:5050/manager/text/deploy?path=/ibmdevops&update=true"&#39;
 
 }
 
 stage("Smoke Test"){
 
-sh "curl --retry-delay 10 --retry 5 http://localhost:7080/ibmdevops/api/v1/products&quot;
+bat "curl --retry-delay 10 --retry 5 http://localhost:5050/ibmdevops/api/v1/products&quot;
 
 }
 
