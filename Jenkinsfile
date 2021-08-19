@@ -4,7 +4,7 @@ def mvnHome
 
 stage('Prepare') {
 
-git url: 'git@github.com:krishnamurthypradeep/newdevops-springboot.git', branch: 'develop'
+git url: 'git@github.com:shruthiklk15/product-app.git', branch: 'develop'
 
 mvnHome = tool 'mvn'
 
