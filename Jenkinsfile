@@ -57,5 +57,4 @@ stage("Smoke Test"){
 sh 'curl --retry-delay 10 --retry 5 "http://localhost:5050/ibmdevops/api/v1/products"';
 
 }
-
 }
